@@ -1,0 +1,6 @@
+---
+docker_swagger_generator_state: "started"
+docker_swagger_generator_version: "v2.1.6"
+docker_swagger_generator_container_name: "swagger-generator"
+docker_swagger_generator_web_port: "49161"
+docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
