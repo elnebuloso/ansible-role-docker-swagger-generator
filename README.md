@@ -25,7 +25,7 @@ docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
   vars:
     docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
   roles:
-    - { role: elnebuloso.docker-swagger-editor }
+    - { role: elnebuloso.docker-swagger-generator }
 ```
 
 ## Dependencies
