@@ -1,6 +1,6 @@
 # Ansible Role - Swagger Generator for Docker
 
-
+[![Build Status](https://travis-ci.org/elnebuloso/ansible-role-docker-swagger-generator.svg?branch=master)](https://travis-ci.org/elnebuloso/ansible-role-docker-swagger-generator)
 
 ## Requirements
 
