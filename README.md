@@ -14,8 +14,9 @@ Available variables are listed below, along with default values (see `defaults/m
 docker_swagger_generator_state: "started"
 docker_swagger_generator_version: "v2.1.6"
 docker_swagger_generator_container_name: "swagger-generator"
-docker_swagger_generator_web_port: "49161"
-docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
+docker_swagger_generator_container_port: "49161"
+docker_swagger_generator_proxy_name: "swagger-generator.box.entwickl.de"
+docker_swagger_generator_proxy_port: "80"
 ```
 
 ## Example Playbook
@@ -23,7 +24,7 @@ docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
 ```
 - hosts: localhost
   vars:
-    docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
+    docker_swagger_generator_proxy_name: "swagger-generator.box.entwickl.de"
   roles:
     - { role: elnebuloso.docker-swagger-generator }
 ```
@@ -31,7 +32,7 @@ docker_swagger_generator_web_name: "swagger-generator.box.entwickl.de"
 ## Dependencies
 
 - `docker` should be installed and working (you can use the `elnebuloso.docker` role to install).
-- `apache2` should be installed and working (you can use the `elnebuloso.apache2` role to install).
+- If Apache2 is installed, a proxy vhost will be configured.
 
 ##  License
 
