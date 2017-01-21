@@ -16,7 +16,7 @@
 # docker container
 
 - name: install container
-  docker:
+  docker_container:
     name: "{{docker_swagger_generator_container_name}}"
     image: "swaggerapi/swagger-generator:{{docker_swagger_generator_version}}"
     state: "{{docker_swagger_generator_state}}"
