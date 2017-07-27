@@ -8,25 +8,15 @@ This role requires Ansible 2.0 or higher, and platform requirements are listed i
 
 ## Role Variables
 
-Available variables are listed below, along with default values (see `defaults/main.yml`):
-
-```
-docker_swagger_generator_state: "started"
-docker_swagger_generator_version: "v2.1.6"
-docker_swagger_generator_container_name: "swagger-generator"
-docker_swagger_generator_container_port: "49161"
-docker_swagger_generator_proxy_name: "swagger-generator.box.entwickl.de"
-docker_swagger_generator_proxy_port: "80"
-```
+- [`defaults/main.yml`](https://github.com/elnebuloso/ansible-role-docker-swagger-generator/blob/master/defaults/main.yml)
 
 ## Example Playbook
 
 ```
 - hosts: localhost
-  vars:
-    docker_swagger_generator_proxy_name: "swagger-generator.box.entwickl.de"
   roles:
-    - { role: elnebuloso.docker-swagger-generator }
+    - role: elnebuloso.docker-swagger-generator
+      docker_swagger_generator_proxy_name: "swagger-generator.box.entwickl.de"
 ```
 
 ## Dependencies
